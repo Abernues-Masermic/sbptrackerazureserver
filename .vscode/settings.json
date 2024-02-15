@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.defaultWebAppToDeploy": "/subscriptions/b0d83aaa-a899-4e0b-853e-375f9494bb82/resourceGroups/group_masermic_sbptracker/providers/Microsoft.Web/sites/sbptracker-server",
+    "appService.deploySubpath": "."
+}
