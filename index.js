@@ -13,7 +13,7 @@ let constants = require('./public/js/constants');
 
 // Creamos el servidor de sockets y lo incorporamos al servidor de la aplicación
 const wss = new WebSocketServer({
-    port:PORT,
+    port: PORT,
     httpServer: server,
     autoAcceptConnections: false,
 });
@@ -30,9 +30,6 @@ app.use('/', express.static(__dirname + './public'));
 app.use(express.json());
 app.use('/static', express.static(path.join(process.cwd(), "public")));
 
-const data = {
-    username: 'Varun Tiwari',
-};
 app.get('/', function (req, res)
 {
     const serverData = { saludo_servidor: 'Hello from the server!' }; 
