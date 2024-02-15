@@ -12,6 +12,10 @@
     <script src="static/js/websocket.js"></script>
     <div class="container">
         <h1><%= saludo_servidor %></h1>
+        <div style="display: inline;">
+            <input id="connection_ip" type="text" value="ws://localhost:8080" style="border:black;border-style: groove; background: white; width: 300px;"/>
+            <button onclick="connectToWebSocket()">Connect</button>
+        </div>
         <div class="row mt-4">
             <div class="col-sm-6">
                 <label class="form-label">Messages SBP client</label>

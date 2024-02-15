@@ -11,12 +11,17 @@ const SOURCE_SERVER = 2;
 
 // La función init se ejecuta cuando termina de cargarse la página
 function init() {
+    //wsConnect();
+}
+
+function connectToWebSocket(){
     wsConnect();
 }
 
 // Invoca esta función para conectar con el servidor de WebSocket
 function wsConnect() {
-    websocket = new WebSocket("ws://sbptracker-server.azurewebsites.net");
+    var connection_ip = document.getElementById("connection_ip");
+    websocket = new WebSocket(connection_ip.value);
 
     // Asignación de callbacks
     websocket.onopen = function (evt) {
