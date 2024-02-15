@@ -16,7 +16,7 @@ function init() {
 
 // Invoca esta función para conectar con el servidor de WebSocket
 function wsConnect() {
-    websocket = new WebSocket("ws://localhost:8080");
+    websocket = new WebSocket("ws://sbptracker-server.azurewebsites.net");
 
     // Asignación de callbacks
     websocket.onopen = function (evt) {
