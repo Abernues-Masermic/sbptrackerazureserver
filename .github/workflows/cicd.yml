@@ -1,4 +1,4 @@
-name: Deploy to azure App service
+name: Deploy SBPTracker to azure App service
 
 on:
   push:
