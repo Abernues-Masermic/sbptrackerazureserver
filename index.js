@@ -66,8 +66,8 @@ wss.on("request", (request) =>{
             {
                 let s_info = message_json.info;
 
-                message_json.info = '(REQUEST) ' + s_info;
-                connection.sendUTF(JSON.stringify(message_json));
+                //message_json.info = '(REQUEST) ' + s_info;
+                //connection.sendUTF(JSON.stringify(message_json));
 
                 message_json.info = '(BROADCAST) ' + s_info;
                 wss.broadcast(JSON.stringify(message_json));
